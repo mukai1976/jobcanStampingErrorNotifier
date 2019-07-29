@@ -197,7 +197,7 @@ if __name__ == "__main__":
                     channel=SLACK_CHANNEL,
                     text= "%s %s %s" % ('{:　<8}'.format(staff), '{:　<11}'.format(errordate), contents) + "\r\n",
                     username="jobcan 3日経過している打刻エラー※申請済み含む",
-                    user=SLACK_USER_ID,
+                    user=slack_userid,
                     link_names=1
                 )
             message = message + "%s %s %s" % ('{:　<8}'.format(staff), '{:　<11}'.format(errordate), contents) + "\r\n"
