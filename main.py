@@ -194,10 +194,10 @@ if __name__ == "__main__":
             if slack_userid != "":
                 sc.api_call(
                     "chat.postMessage",
-                    channel=SLACK_CHANNEL,
+                    channel=slack_userid,
                     text= "%s %s %s" % ('{:　<8}'.format(staff), '{:　<11}'.format(errordate), contents) + "\r\n",
                     username="jobcan 3日経過している打刻エラー※申請済み含む",
-                    user=slack_userid,
+                    user=SLACK_USER_ID,
                     link_names=1
                 )
             message = message + "%s %s %s" % ('{:　<8}'.format(staff), '{:　<11}'.format(errordate), contents) + "\r\n"
