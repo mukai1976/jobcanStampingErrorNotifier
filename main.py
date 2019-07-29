@@ -196,7 +196,7 @@ if __name__ == "__main__":
                     "chat.postMessage",
                     channel=slack_userid,
                     text= "%s %s %s" % ('{:　<8}'.format(staff), '{:　<11}'.format(errordate), contents) + "\r\n",
-                    username="jobcan 3日経過している打刻エラー※申請済み含む",
+                    username="jobcan 3日経過している打刻エラー※修正申請済み含む",
                     user=SLACK_USER_ID,
                     link_names=1
                 )
@@ -206,7 +206,7 @@ if __name__ == "__main__":
        "chat.postMessage",
        channel=SLACK_CHANNEL,
        text=message,
-       username="jobcan 3日経過している打刻エラー※申請済み含む",
+       username="jobcan 3日経過している打刻エラー※修正申請済み含む",
        user=SLACK_USER_ID,
        link_names=1
     )
